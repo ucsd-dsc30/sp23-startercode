@@ -1,3 +1,14 @@
+/**
+ * Name: TODO
+ * PID: TODO
+ */
+
+/**
+ * TODO
+ * @author TODO
+ * @since TODO
+ */
+
 public class OneHot {
     // Part 1
     public static String[] getUnique(String[] arr) {
