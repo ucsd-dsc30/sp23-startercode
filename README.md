@@ -66,7 +66,7 @@ Notice, the left side of the array remains empty and the more enqueues and deque
 
 **Expand Capacity**
 
-Since we are using an array, which is a fixed size data structure, to implement a queue, it will eventually reach maximum capacity after enough elements are added. However, the queue should be able to accommodate any number of elements. That is, regardless of your queue’s initial capacity, a call to `enqueue(char elem)` will always successfully add an element to your queue. Thus, **once the array that backs your queue becomes FULL, you will need to resize it.**
+Since we are using an array, which is a fixed size data structure, to implement a queue, it will eventually reach maximum capacity after enough elements are added. However, the queue should be able to accommodate any number of elements. That is, regardless of your queue’s initial capacity, a call to `enqueue(char elem)` will always successfully add an element to your queue. Thus, **once the array that backs your queue becomes FULL, you will need to resize it, resizing should take O(n) time.**
 
 **Steps to take:** when expanding the capacity of your Queue, you will need to do the following:
 - Allocate a new, larger array (doubled in size).
@@ -76,6 +76,8 @@ Since we are using an array, which is a fixed size data structure, to implement 
 You will find it useful to use the % (modulo) operator which will return the remainder of the division x%y = r of x/y. For example, 5 % 3 = 2 (*5 divided by 3 results in a remainder of 2*). Think about how you can use this when writing your circular array.
 
 **Implementation**
+
+You will be implementing the following methods, **all queue methods should be O(1), except when expanding the queue is required, expanding the queue will take O(n) time:**
 
 | Constructors and methods to implement in CharQueue.java |
 | --- |
