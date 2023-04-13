@@ -109,7 +109,8 @@ Assertions.assertThrows(ArithmeticException.class, () -> {
 //Replace “ArithmeticException” with the type of exception you are expecting
 ```
 
-This assert will pass when the specified exception is thrown, and will fail otherwise. 
+This assert will pass when the specified exception is thrown, and will fail otherwise. Assertions is not a default package in java, so you will need to import it with the code: 
+`import org.junit.jupiter.api.Assertions;`
 
 **Some suggestions for testing are:**
 - Remove an element from an empty queue.
