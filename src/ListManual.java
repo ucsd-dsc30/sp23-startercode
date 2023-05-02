@@ -11,7 +11,7 @@ public class ListManual {
  * @since  TODO
  */
 
-// No style for this file. How poetic :D	
+// No style for this file. How poetic :D
 
 public static ArrayList<String>  listManipulations() {
 
@@ -29,10 +29,8 @@ public static ArrayList<String>  listManipulations() {
 	//task 7.  answers.add("TODO");
 	//task 8.  answers.add("TODO");  //put your statements in one line, follow the column Structures
 	//task 9.  answers.add("TODO");  //put your statements in one line, follow the column Structures
-	//task 10. answers.add("TODO");  
+	//task 10. answers.add("TODO");
 	return answers;
-
 }
-
 
 }
