@@ -91,12 +91,23 @@ public class MNIST {
      */
     public static void loadData(String imgFile, String lblFile, float[][] imgArr, short[] lblArr) throws IOException {
 
-        File data = Paths.get( "src", "data", imgFile).toFile();
-        InputStream stream = new FileInputStream(data);
+        InputStream stream;
+        File data = Paths.get("src", "data", imgFile).toFile();
+        try {
+            stream = new FileInputStream(data);
+        } catch (FileNotFoundException f) {
+            data = Paths.get("data", imgFile).toFile();
+            stream = new FileInputStream(data);
+        }
         InputStream imgIn = new GZIPInputStream(stream);
 
-        data = Paths.get( "src", "data", lblFile).toFile();
-        stream = new FileInputStream(data);
+        data = Paths.get("src", "data", lblFile).toFile();
+        try {
+            stream = new FileInputStream(data);
+        } catch (FileNotFoundException f) {
+            data = Paths.get("data", lblFile).toFile();
+            stream = new FileInputStream(data);
+        }
         InputStream lblIn = new GZIPInputStream(stream);
 
         // first 16 bytes of image data are metadata
