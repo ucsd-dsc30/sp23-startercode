@@ -8,7 +8,7 @@ import java.awt.*;
  */
 
 public class ImageRenderer {
-    private static final int PIXEL_SIZE = 35;
+    private static final int PIXEL_SIZE = 20;
     private int width;
     private int height;
     private int padx;
