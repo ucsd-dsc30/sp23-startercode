@@ -1,0 +1,49 @@
+java PlagiarismChecker input1.txt input2.txt
+
+input1.txt:
+100% of lines are also in input2.txt
+
+input2.txt:
+100% of lines are also in input1.txt
+
+
+---------------------------------------------------------------------
+
+java PlagiarismChecker input1.txt input2.txt input3.txt
+
+input1.txt:
+100% of lines are also in input2.txt
+66% of lines are also in input.txt
+
+input2.txt:
+100% of lines are also in input1.txt
+66% of lines are also in input3.txt
+
+input3.txt:
+60% of lines are also in input1.txt
+60% of lines are also in input2.txt
+
+
+---------------------------------------------------------------------
+
+java PlagiarismChecker input1.txt input2.txt input3.txt input4.txt
+
+input1.txt:
+100% of lines are also in input2.txt
+66% of lines are also in input3.txt
+88% of lines are also in input4.txt
+
+input2.txt:
+100% of lines are also in input1.txt
+66% of lines are also in input3.txt
+88% of lines are also in input4.txt
+
+input3.txt:
+60% of lines are also in input1.txt
+60% of lines are also in input2.txt
+60% of lines are also in input4.txt
+
+input4.txt:
+45% of lines are also in input1.txt
+45% of lines are also in input2.txt
+35% of lines are also in input3.txt
