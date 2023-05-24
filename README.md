@@ -6,3 +6,4 @@
 - ### [PA5](https://github.com/ucsd-dsc30/sp23-startercode/tree/PA5)
 - ### [PA6](https://github.com/ucsd-dsc30/sp23-startercode/tree/PA6)
 - ### [PA7](https://github.com/ucsd-dsc30/sp23-startercode/tree/PA7)
+- ### [PA8](https://github.com/ucsd-dsc30/sp23-startercode/tree/PA8)
