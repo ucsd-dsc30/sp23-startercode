@@ -38,10 +38,10 @@ public class MyPriorityQueue<T extends Comparable<? super T>> {
     }
 
     /**
-     * Retrieve and remove the head of this Priority Queue (largest element), or null if the
+     * Retrieve and remove the head of this Priority Queue (smallest element), or null if the
      * queue is empty.
      *
-     * @return The head of the queue (largest element), or null if queue is empty.
+     * @return The head of the queue (smallest element), or null if queue is empty.
      */
     public T poll() {
         /* TODO */
